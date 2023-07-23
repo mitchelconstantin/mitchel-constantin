@@ -11,7 +11,11 @@ const lines = [
 
 export const AboutMe = () => {
   return (
-    <Code style={{padding: '8px'}}>
+    <Code
+      colorScheme="blue"
+      style={{ padding: "8px" }}
+      width='100%'
+    >
       {lines.map((line, i) => (
         <CodeLine text={`${i + 1}. ${line}`} />
       ))}

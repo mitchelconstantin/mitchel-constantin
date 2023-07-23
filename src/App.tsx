@@ -7,7 +7,7 @@ import { Projects } from "./components/projects";
 function App() {
   return (
     <>
-      <Container centerContent>
+      <Container centerContent >
         <Header />
         <AboutMe />
         <ContactMe />
