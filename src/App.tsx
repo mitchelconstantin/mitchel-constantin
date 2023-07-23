@@ -9,7 +9,7 @@ const routes = [
   { path: "/sample", element: <Sample />, title: "Sample" },
 ];
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <nav>
       <ul>
