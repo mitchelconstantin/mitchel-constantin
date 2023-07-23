@@ -1,16 +1,17 @@
 import "./App.css";
 import { AboutMe } from "./components/about-me";
+import { ContactMe } from "./components/contact-me";
 import { Header } from "./components/header";
-import { LinkContainer } from "./components/link-container";
+import { Projects } from "./components/projects";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
       <AboutMe />
-      <LinkContainer />
+      <ContactMe />
+      <Projects />
     </>
   );
 }
