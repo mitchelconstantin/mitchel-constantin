@@ -1,29 +1,40 @@
-import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import { Link, List, ListIcon, ListItem } from "@chakra-ui/react";
+import { Button, ButtonGroup, Link } from "@chakra-ui/react";
+import { CgMail } from "react-icons/cg";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { LiaGithubSquare } from "react-icons/lia";
 
-const ExternalLink = ({ title, link }: { title: string; link: string }) => {
-  return (
-    <Link href={link} isExternal>
-      {title} <ExternalLinkIcon mx="2px" />
-    </Link>
-  );
-};
-
-const websites: { title: string; link: string }[] = [
-  { title: "Github", link: "https://github.com/mitchelconstantin" },
-  { title: "LinkedIn", link: "https://www.linkedin.com/in/mitchelconstantin" },
-  { title: "email", link: "mailto:mitchconstantin@gmail.com" },
+const websites: { title: string; link: string; icon?: any }[] = [
+  {
+    title: "Github",
+    link: "https://github.com/mitchelconstantin",
+    icon: <LiaGithubSquare size="25px" />,
+  },
+  {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/mitchelconstantin",
+    icon: <AiOutlineLinkedin size="25px" />,
+  },
+  {
+    title: "email",
+    link: "mailto:mitchconstantin@gmail.com",
+    icon: <CgMail size="25px" />,
+  },
 ];
 
 export const ContactMe = () => {
   return (
-    <List justifyItems={"left"} style={{ width: "100%" }} spacing={3}>
-      {websites.map(({ title, link }) => (
-        <ListItem style={{ width: "100%" }} alignItems="left">
-          <ListIcon as={ChevronRightIcon} color="green.500" />
-          <ExternalLink title={title} link={link} />
-        </ListItem>
+    <ButtonGroup
+      variant="ghost"
+      style={{ padding: "8px" }}
+      spacing={{ base: 1, md: 6 }}
+    >
+      {websites.map(({ title, link, icon }) => (
+        <Link isExternal href={link}>
+          <Button leftIcon={icon} colorScheme="blue">
+            {title}
+          </Button>
+        </Link>
       ))}
-    </List>
+    </ButtonGroup>
   );
 };
