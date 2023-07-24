@@ -29,7 +29,7 @@ export const ContactMe = () => {
       spacing={{ base: 1, md: 6 }}
     >
       {websites.map(({ title, link, icon }) => (
-        <Link isExternal href={link}>
+        <Link key={title} isExternal href={link}>
           <Button leftIcon={icon} colorScheme="blue">
             {title}
           </Button>

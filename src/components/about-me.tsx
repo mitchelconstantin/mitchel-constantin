@@ -12,12 +12,13 @@ const lines = [
 export const AboutMe = () => {
   return (
     <Code
+      borderRadius={"20px"}
       colorScheme="blue"
       style={{ padding: "8px" }}
-      width='100%'
+      width="100%"
     >
       {lines.map((line, i) => (
-        <CodeLine text={`${i + 1}. ${line}`} />
+        <CodeLine key={line} text={`${i + 1}. ${line}`} />
       ))}
     </Code>
   );

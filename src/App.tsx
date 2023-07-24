@@ -30,7 +30,11 @@ function App() {
         {/* <Navigation /> */}
         <Routes>
           {routes.map((route) => (
-            <Route path={route.path} element={route.element} />
+            <Route
+              key={route.title}
+              path={route.path}
+              element={route.element}
+            />
           ))}
         </Routes>
       </Container>
