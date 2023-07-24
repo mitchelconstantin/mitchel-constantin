@@ -1,6 +1,5 @@
 import {
   useColorMode,
-  Button,
   Heading,
   Image,
   Card,
