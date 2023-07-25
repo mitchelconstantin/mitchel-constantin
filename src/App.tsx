@@ -1,6 +1,6 @@
 import "./App.css";
 import { Container } from "@chakra-ui/react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Coffee } from "./pages/coffee";
 
@@ -25,7 +25,7 @@ export const Navigation = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Container centerContent>
         {/* <Navigation /> */}
         <Routes>
@@ -38,7 +38,7 @@ function App() {
           ))}
         </Routes>
       </Container>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

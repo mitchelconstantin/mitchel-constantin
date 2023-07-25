@@ -8,8 +8,9 @@ import {
   CardFooter,
   Stack,
   Image,
-  Link,
+  //   Link,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { Project } from "../utils/types";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
@@ -24,7 +25,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
       alignItems={"center"}
     >
       <Image
-      borderRadius={'20px'}
+        borderRadius={"20px"}
         height={{ base: "100px", sm: "200px" }}
         width={{ base: "100px", sm: "200px" }}
         src={project.logo}
@@ -36,7 +37,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           <Text py="1">{project.description}</Text>
         </CardBody>
         <CardFooter paddingTop={"0px"} justifyContent={"center"}>
-          <Link isExternal href={project.link}>
+          <Link to={project.link} target="_blank">
             <Button
               rightIcon={<ExternalLinkIcon />}
               variant="ghost"
