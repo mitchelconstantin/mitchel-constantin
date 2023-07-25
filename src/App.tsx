@@ -2,11 +2,11 @@ import "./App.css";
 import { Container } from "@chakra-ui/react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home";
-import { Sample } from "./pages/sample";
+import { Coffee } from "./pages/coffee";
 
 const routes = [
   { path: "/", element: <Home />, title: "Home" },
-  { path: "/sample", element: <Sample />, title: "Sample" },
+  { path: "/coffee", element: <Coffee />, title: "Coffee" },
 ];
 
 export const Navigation = () => {
@@ -14,7 +14,7 @@ export const Navigation = () => {
     <nav>
       <ul>
         {routes.map((route) => (
-          <li>
+          <li key={route.title}>
             <Link to={route.path}>{route.title}</Link>
           </li>
         ))}
