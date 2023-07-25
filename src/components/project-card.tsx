@@ -8,7 +8,6 @@ import {
   CardFooter,
   Stack,
   Image,
-  //   Link,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Project } from "../utils/types";
