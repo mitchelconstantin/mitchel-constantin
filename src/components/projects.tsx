@@ -31,7 +31,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <Card
       borderRadius={"20px"}
-      marginTop={"8px"}
+      marginBottom={"8px"}
       height={{ base: "330px", sm: "200px" }}
       direction={{ base: "column", sm: "row" }}
       overflow="hidden"
