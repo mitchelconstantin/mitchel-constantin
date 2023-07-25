@@ -32,7 +32,7 @@ export const Header = () => {
       />
       <Stack>
         <CardBody>
-          <Heading size={{ base: "md", sm: "lg" }}>Mitchel Constantin2</Heading>
+          <Heading size={{ base: "md", sm: "lg" }}>Mitchel Constantin</Heading>
           <Heading size={{ base: "sm", sm: "md" }}>Software Engineer</Heading>
         </CardBody>
       </Stack>
