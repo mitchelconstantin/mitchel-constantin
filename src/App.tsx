@@ -1,8 +1,8 @@
 import "./App.css";
 import { Container } from "@chakra-ui/react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import { Home } from "./pages/sample";
-import { Sample } from "./pages/about";
+import { Home } from "./pages/Home";
+import { Sample } from "./pages/sample";
 
 const routes = [
   { path: "/", element: <Home />, title: "Home" },

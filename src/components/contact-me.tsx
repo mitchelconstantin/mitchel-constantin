@@ -15,7 +15,7 @@ const websites: { title: string; link: string; icon?: any }[] = [
     icon: <AiOutlineLinkedin size="25px" />,
   },
   {
-    title: "email",
+    title: "Email",
     link: "mailto:mitchconstantin@gmail.com",
     icon: <CgMail size="25px" />,
   },

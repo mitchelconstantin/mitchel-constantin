@@ -1,15 +1,8 @@
-import { AboutMe } from "../components/about-me";
-import { ContactMe } from "../components/contact-me";
-import { Header } from "../components/header";
-import { Projects } from "../components/projects";
-
-export const Home = () => {
+export const Sample = () => {
   return (
-    <>
-      <Header />
-      <AboutMe />
-      <ContactMe />
-      <Projects />
-    </>
+    <div>
+      <h1>Sample</h1>
+      <p>This is an example of a page where I will build new pages in the future. Stay tuned!</p>
+    </div>
   );
 };
