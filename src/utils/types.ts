@@ -1,7 +1,7 @@
 export interface ICoffeeRecipe {
   yields: number;
   description?: string;
-  steps?: {start: string, end: string, description: string}[];
+  steps?: {start?: string, end?: string, description: string}[];
   reference?: {name: string, link: string};
 }
 

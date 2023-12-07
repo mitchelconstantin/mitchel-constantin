@@ -3,9 +3,16 @@ import { CiCoffeeBean } from "react-icons/ci";
 import { ICoffeeRecipe } from "../utils/types";
 
 export const CoffeeRecipe = ({ coffee }: { coffee: ICoffeeRecipe }) => {
+  const reference = coffee.reference?.link ? (
+    <a href={coffee.reference.link}>{coffee.reference?.name}</a>
+  ) : (
+    coffee.reference?.name
+  );
+
   return (
     <div>
-      {coffee.description} from {coffee.reference?.name}
+      {coffee.description}
+      {reference && <>Source: {reference}</>}
       <List spacing={3}>
         {coffee.steps?.map((step) => {
           return (

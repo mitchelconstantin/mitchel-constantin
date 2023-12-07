@@ -17,7 +17,7 @@ import { CoffeeRecipe } from "../components/coffee-recipe";
 export const Coffee = () => {
   return (
     <div>
-      <p>Landing page for some of my go to coffee recipes. This page is a work in progress!</p>
+      <p>Landing page for some of my go to coffee recipes.</p>
       <Tabs align="center" variant="soft-rounded" colorScheme="blue">
         <TabList>
           {coffeeRecipeGroups.map((c) => (
