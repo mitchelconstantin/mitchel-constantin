@@ -21,7 +21,20 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors, config });
+const components = {
+  Container: {
+    baseStyle: {
+      padding: "2",
+      paddingTop: "0",
+    },
+  },
+};
+
+const theme = extendTheme({
+  config,
+  colors,
+  components,
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
