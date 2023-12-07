@@ -22,6 +22,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
       overflow="hidden"
       variant="outline"
       alignItems={"center"}
+      justifyContent={"center"}
     >
       <Image
         borderRadius={"20px"}
